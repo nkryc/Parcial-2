@@ -233,3 +233,42 @@ max-width: 1000px;
     font-size: 16px;
     color: var(--text-color);
 }
+
+.nosotros {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.contenido-nosotros {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.contenido-nosotros h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    line-height: 1;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1rem;
+}
+
+.img-nosotros {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.img-nosotros img {
+    width: 32vw;
+    border-radius: 50%;
+}
