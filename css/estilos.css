@@ -29,9 +29,8 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 4rem 12% 4rem;
+    padding: 1rem 10% 1rem;
     background: var(--main-color);
-    backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,16 +41,6 @@ body{
     font-size: 3rem;
     color: var(--text-color);
     font-weight: 800;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.logo:hover{
-    transform: scale(1.1);
-}
-
-.logo span{
-    text-shadow: 0 0 5px var(--second-bg-color);
 }
 
 .navbar a{
@@ -96,10 +85,6 @@ section{
 }
 
 span{
-    color: var(--main-color);
-}
-
-.logo span{
     color: var(--main-color);
 }
 
