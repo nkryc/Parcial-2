@@ -38,7 +38,11 @@ body{
 }
 
 .logo{
-    width: 10rem;
+    width: 8rem;
+}
+
+.logo:hover{
+    transform: scale(1.2);
 }
 
 .navbar a{
@@ -267,6 +271,46 @@ max-width: 1000px;
 
 .item-nosotros h2{
     font-size: 2.8rem;
+}
+
+.conacto{
+    background-color: var(--bg-color);
+}
+
+.contacto h2{
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.contacto form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.contacto form .input-group{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contacto form .input-group input, .contacto form textarea{
+    width: 100%;
+    padding: 2.5rem;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border-radius: 2rem;
+    border: 2px solid var(--main-color);
+    margin: 1.5rem 0;
+    resize: none;
+}
+
+.contacto form .boton{
+    margin-top: 2rem;
 }
 
 
