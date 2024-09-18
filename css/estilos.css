@@ -24,7 +24,15 @@ body{
     color: var(--text-color);
 }
 
-.header{
+.logo{
+    width: 8rem;
+}
+
+.logo:hover{
+    transform: scale(1.2);
+}
+
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -37,15 +45,58 @@ body{
     z-index: 5;
 }
 
-.logo{
-    width: 8rem;
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}   
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.26);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px var(--main-color);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
-.logo:hover{
-    transform: scale(1.2);
+.sidebar li {
+    width: 100%;
+    padding: 10px;
 }
 
-.navbar a{
+.sidebar a {
+    width: 100%;
+    color: var(--text-color);
+}
+
+.menu-button {
+    display: none;
+    margin-right: 5px;
+}
+
+.logo {
+    font-size: 3rem;
+    color: #b74b4b;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav a {
     font-size: 1.8rem;
     color: var(--text-color);
     margin-left: 4rem;
@@ -54,8 +105,8 @@ body{
     border-bottom: 3px solid transparent;
 }
 
-.navbar a:hover,
-.navbar a.active{
+nav a:hover,
+nav a.active {
     color: var(--second-bg-color);
     border-bottom: 3px solid var(--second-bg-color);
 }
@@ -230,6 +281,7 @@ max-width: 1000px;
 
 .servicios-section {
     text-align: center;
+    margin-top: 4vw;
 }
 .servicios-titulo {
     display: flex;
@@ -448,14 +500,107 @@ max-width: 1000px;
     background-color: var(--bg-color);
 }
 
-.asistencia .container{
-    background-color: #fca311;
-    color: var(--text-color);
-    border-radius: 1rem;
-    padding: 2rem;
-    width: 70%;
-    margin: auto;
-    margin-top: 2rem;
+
+@media (max-width: 400px) {
+    html {
+        font-size: 50%;
+    }
+
+    .logo {
+        font-size: 2rem; 
+    }
+
+    #iconos-menu {
+        display: block; 
+    }
+
+    .nav {
+        display: none; 
+    }
+
+    section {
+        padding: 8rem 5%;
+    }
+
+    .contenido-inicio h1 {
+        font-size: 3rem;
+
+    .contenido-inicio h3 {
+        font-size: 1.8rem; 
+    }
+
+    .contenido-inicio p {
+        font-size: 1.3rem; 
+    }
+
+    .img-inicio img {
+        width: 50vw; 
+    }
+
+    .botones {
+        flex-direction: column;
+    }
+
+    .boton {
+        font-size: 1.2rem;
+    }
+
+    .nosotros {
+        gap: 2rem;
+    }
+
+    .img-nosotros img {
+        width: 60vw;
+    }
+
+    .contenido-nosotros h1 {
+        font-size: 2rem;
+    }
+
+    .footer {
+        padding: 2rem 0;
+    }
+
+    .footer ul li {
+        padding: 0 10px;
+    }
+
+    }
+    .servicios-titulo{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .servicios {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .servicio-block {
+        width: 100%;
+    }
+
+    .servicios-texto {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-button{
+        display: block;
+    }
+    nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        padding: 1rem solid;
+    }
+
+    .sidebar{
+        width: 100%;
+    }
+
 }
 
 .asistencia .container .row{
