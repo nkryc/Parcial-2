@@ -281,6 +281,7 @@ max-width: 1000px;
 
 .servicios-section {
     text-align: center;
+    margin-top: 4vw;
 }
 .servicios-titulo {
     display: flex;
