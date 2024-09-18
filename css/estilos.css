@@ -287,6 +287,7 @@ max-width: 1000px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     
 }
 
@@ -342,7 +343,7 @@ max-width: 1000px;
 
 .servicio-block p {
     margin-top: 15px;
-    text-align: center;
+    text-align: justify;
     justify-content: center;
     font-size: 16px;
     
@@ -362,6 +363,7 @@ max-width: 1000px;
     border-radius: 2rem;
     padding: 20px 40px;
     justify-content: space-evenly;
+    text-align: justify;
 }
 
 .colored {
@@ -400,8 +402,8 @@ max-width: 1000px;
 }
 
 .item-nosotros{
-    min-height: 550px;
-    max-width: 440px;
+    min-height: 400px;
+    max-width: 300px;
     background: rgba(0, 0, 0, 0.7);
     border: 3px solid rgba(238, 238, 238, 0.3);
     border-radius: 2rem;
@@ -496,109 +498,6 @@ max-width: 1000px;
 }
 
 
-@media (max-width: 400px) {
-    html {
-        font-size: 50%;
-    }
-
-    .logo {
-        font-size: 2rem; 
-    }
-
-    #iconos-menu {
-        display: block; 
-    }
-
-    section {
-        padding: 8rem 5%;
-    }
-
-    .contenido-inicio h1 {
-        font-size: 3rem;
-
-    .contenido-inicio h3 {
-        font-size: 1.8rem; 
-    }
-
-    .contenido-inicio p {
-        font-size: 1.3rem; 
-    }
-
-    .img-inicio img {
-        width: 50vw; 
-    }
-
-    .botones {
-        flex-direction: column;
-    }
-
-    .boton {
-        font-size: 1.2rem;
-    }
-
-    .nosotros {
-        gap: 2rem;
-    }
-
-    .img-nosotros img {
-        width: 60vw;
-    }
-
-    .contenido-nosotros h1 {
-        font-size: 2rem;
-    }
-
-    .footer {
-        padding: 2rem 0;
-    }
-
-    .footer ul li {
-        padding: 0 10px;
-    }
-
-    }
-    .servicios-titulo{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .servicios {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .servicio-block {
-        width: 100%;
-    }
-
-    .servicios-texto {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .menu-button{
-        display: block;
-    }
-    nav {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 50%;
-        padding: 1rem solid;
-    }
-
-    .sidebar{
-        width: 100%;
-    }
-
-    .hideOnMobile{
-        display: none;
-
-    }
-
-}
-
 .asistencia{
     background-color: var(--bg-color);
 }
@@ -649,9 +548,9 @@ max-width: 1000px;
 }
 
 .asistencia .container .bar .info span{
-  font-size: 2rem;
-  font-weight: 500;
-  margin-left: 0.5rem;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
 }
 
 .biografia {
@@ -793,4 +692,123 @@ max-width: 1000px;
     width: 20vw;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
+}
+
+@media (max-width: 400px) {
+    html {
+        font-size: 50%;
+    }
+
+    .logo {
+        font-size: 2rem; 
+    }
+
+    #iconos-menu {
+        display: block; 
+    }
+
+    section {
+        padding: 8rem 5%;
+    }
+
+    .contenido-inicio h1 {
+        font-size: 3rem;
+
+    .contenido-inicio h3 {
+        font-size: 1.8rem; 
+    }
+
+    .contenido-inicio p {
+        font-size: 1.3rem; 
+    }
+
+    .img-inicio img {
+        width: 50vw; 
+    }
+
+    .botones {
+        flex-direction: column;
+    }
+
+    .boton {
+        font-size: 1.2rem;
+    }
+
+    .nosotros {
+        gap: 2rem;
+    }
+
+    .caja-nosotros {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .columnas {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-nosotros img {
+        width: 60vw;
+    }
+
+    .contenido-nosotros h1 {
+        font-size: 2rem;
+    }
+
+    .footer {
+        padding: 2rem 0;
+    }
+
+    .footer ul li {
+        padding: 0 10px;
+    }
+
+    }
+    .servicios-titulo{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .servicios {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .servicio-block {
+        width: 100%;
+    }
+
+    .servicios-texto {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .servicio-block img {
+        min-width: 200px;
+        min-height: 145px;
+    }
+
+    .menu-button{
+        display: block;
+    }
+    nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        padding: 1rem solid;
+    }
+
+    .sidebar{
+        width: 100%;
+    }
+
+    .hideOnMobile{
+        display: none;
+
+    }
+
 }
