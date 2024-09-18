@@ -603,6 +603,20 @@ max-width: 1000px;
 
 }
 
+.asistencia{
+    background-color: var(--bg-color);
+}
+
+.asistencia .container{
+    background-color: #fca311;
+    color: var(--text-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
 .asistencia .container .row{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -682,7 +696,7 @@ max-width: 1000px;
 .img-bio {
     flex: 1;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .img-bio img {
@@ -729,7 +743,7 @@ max-width: 1000px;
 .img-des {
     flex: 1;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .img-des img {
@@ -776,7 +790,7 @@ max-width: 1000px;
 .img-ter {
     flex: 1;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .img-ter img {
