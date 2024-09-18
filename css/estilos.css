@@ -281,18 +281,12 @@ max-width: 1000px;
 
 .servicios-section {
     text-align: center;
-    margin-top: 4vw;
 }
 .servicios-titulo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     
-}
-
-.servicios-titulo h1 {
-    font-size: 5rem;
-    color: var(--main-color);
 }
 
 .servicios-titulo h2 {
@@ -334,8 +328,8 @@ max-width: 1000px;
 
 .servicio-block img {
     position: relative;
-    width: 22vw;
-    border-radius: 15%;
+    width: 16vw;
+    border-radius: 10%;
     gap: 70px;
     justify-content: center;  
 }
