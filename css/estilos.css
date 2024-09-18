@@ -490,51 +490,8 @@ max-width: 1000px;
     margin-bottom: 1rem;
 }
 
-
-
-
-
-@media (max-width: 1280px) {
-    html {
-        font-size: 55%; 
-    }
-
-    .logo {
-        font-size: 2.5rem; 
-    }
-
-    .navbar a {
-        font-size: 1.6rem;
-        margin-left: 2.5rem;
-    }
-
-    .contenido-inicio h1 {
-        font-size: 4rem; 
-    }
-
-    .contenido-inicio h3 {
-        font-size: 2rem; 
-
-    .contenido-inicio p {
-        font-size: 1.4rem;
-    }
-
-    .img-inicio img {
-        width: 28vw;
-    }
-
-    .boton {
-        font-size: 1.4rem;
-    }
-
-    .img-nosotros img {
-        width: 35vw; 
-    }
-
-    .contenido-nosotros h1 {
-        font-size: 2.5rem;
-    }
-}
+.asistencia{
+    background-color: var(--bg-color);
 }
 
 
@@ -640,5 +597,44 @@ max-width: 1000px;
 
 }
 
+.asistencia .container .row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    gap: 1.8rem;
+}
 
+.asistencia .container .bar{
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 1rem;
+    background: var(--bg-color);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.asistencia .container .bar:hover{
+    box-shadow: 0 4px 10px var(--text-color);
+    transform: scale(1.03);
+}
+
+.asistencia .container .bar .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.asistencia .container .bar .iconos{
+    max-width: 70%;
+    height: auto;
+    display: block;
+}
+
+.asistencia .container .bar .info span{
+  font-size: 2rem;
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
 
