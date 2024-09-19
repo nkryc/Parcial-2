@@ -330,8 +330,8 @@ max-width: 1000px;
 
 .servicio-block img {
     position: relative;
-    width: 325px;
-    border-radius: 15%;
+    width: 16vw;
+    border-radius: 10%;
     gap: 70px;
     justify-content: center;  
 }
