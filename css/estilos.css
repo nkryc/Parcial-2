@@ -76,7 +76,7 @@ nav ul {
 
 .sidebar a {
     width: 100%;
-    color: var(--text-color);
+    color: var(--main-color);
 }
 
 .menu-button {
@@ -282,10 +282,12 @@ max-width: 1000px;
 .servicios-section {
     text-align: center;
 }
+
 .servicios-titulo {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     
 }
 
@@ -356,6 +358,7 @@ max-width: 1000px;
     border-radius: 2rem;
     padding: 20px 40px;
     justify-content: space-evenly;
+    text-align: center;
 }
 
 .colored {
@@ -366,6 +369,7 @@ max-width: 1000px;
     font-size: 6rem;
     text-align: center;
     margin: 5rem 0;
+    color: var(--main-color);
 }
 
 .nosotros{
@@ -388,14 +392,15 @@ max-width: 1000px;
 }
 
 .columnas{
-    display: grid;
+    display: flex;
+    flex-direction: row;
     grid-template-columns: repeat(4,1fr);
     gap: 3rem;
 }
 
 .item-nosotros{
-    min-height: 550px;
-    max-width: 440px;
+    min-height: 400px;
+    max-width: 300px;
     background: rgba(0, 0, 0, 0.7);
     border: 3px solid rgba(238, 238, 238, 0.3);
     border-radius: 2rem;
@@ -520,6 +525,13 @@ max-width: 1000px;
 
     .img-inicio img {
         width: 50vw; 
+        display: flex;
+        flex-direction:column;
+    }
+
+    .inicio {
+        display: flex;
+        flex-direction: column;
     }
 
     .botones {
@@ -559,7 +571,7 @@ max-width: 1000px;
     .servicios {
         display: flex;
         flex-direction: column;
-        text-align: center;
+        text-align: justify;
     }
 
     .servicio-block {
@@ -568,6 +580,7 @@ max-width: 1000px;
 
     .servicios-texto {
         flex-direction: column;
+        text-align: justify;
         gap: 10px;
     }
 
@@ -591,8 +604,22 @@ max-width: 1000px;
 
     }
 
-}
+    .columnas {
+        display: flex;
+        flex-direction: column;
+    }
 
+}
+.soporte .heading{
+    font-size: 50px;
+    text-align: center;
+    padding: 60px 0;
+}
+.soporte p{
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 0;
+}
 .asistencia{
     background-color: var(--bg-color);
 }
@@ -643,12 +670,12 @@ max-width: 1000px;
 }
 
 .asistencia .container .bar .info span{
-  font-size: 2rem;
-  font-weight: 500;
-  margin-left: 0.5rem;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
 }
 
-.biografia {
+.primero {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -661,7 +688,7 @@ max-width: 1000px;
     width: 100%;
 }
 
-.contenido-bio {
+.contenido-pri {
     flex: 1;
     text-align: left;
     display: flex;
@@ -669,33 +696,33 @@ max-width: 1000px;
     justify-content: center;
 }
 
-.contenido-bio h1 {
+.contenido-pri h1 {
     font-size: 4rem;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 2rem;
 }
 
-.contenido-bio p {
+.contenido-pri p {
     font-size: 1.8rem;
     line-height: 1.6;
     max-width: 80%;
     margin-bottom: 2rem;
 }
 
-.img-bio {
+.img-pri {
     flex: 1;
     display: flex;
     justify-content: flex-start;
 }
 
-.img-bio img {
+.img-pri img {
     width: 20vw;
-    border-radius: 50%;
+    border-radius: 10%;
     box-shadow: 0 0 25px var(--main-color);
 }
 
-.descripcion {
+.segundo {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -708,7 +735,7 @@ max-width: 1000px;
     width: 100%;
 }
 
-.contenido-des {
+.contenido-seg {
     flex: 1;
     text-align: left;
     display: flex;
@@ -716,29 +743,29 @@ max-width: 1000px;
     justify-content: center;
 }
 
-.contenido-des h1 {
+.contenido-seg h1 {
     font-size: 4rem;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 2rem;
 }
 
-.contenido-des p {
+.contenido-seg p {
     font-size: 15px;
     line-height: 1.6;
     max-width: 80%;
     margin-bottom: 2rem;
 }
 
-.img-des {
+.img-seg {
     flex: 1;
     display: flex;
     justify-content: flex-start;
 }
 
-.img-des img {
+.img-seg img {
     width: 20vw;
-    border-radius: 50%;
+    border-radius: 10%;
     box-shadow: 0 0 25px var(--main-color);
 }
 
@@ -785,6 +812,119 @@ max-width: 1000px;
 
 .img-ter img {
     width: 20vw;
-    border-radius: 50%;
+    border-radius: 10%;
     box-shadow: 0 0 25px var(--main-color);
 }
+
+/* CSS Portfolio Juan :P */
+
+.portfolio-section {
+    margin-top: 4vw;
+    text-align: center;
+}
+
+.portfolio-titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.portfolio-titulo h1 {
+    font-size: 5rem;
+    color: var(--main-color);
+}
+
+.portfolio-titulo h2 {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.proyectos {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 15px;
+}
+
+.proyecto-cajita {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    border: 3px solid rgba(238, 238, 238, 0.3);
+    border-radius: 2rem;
+    min-height: 450px;
+    max-width: 800px;
+    padding: 20px 40px;
+}
+
+.proyecto-cajita h2 {
+    display: flex;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--main-color);
+}
+
+.proyecto-cajita img {
+    position: relative;
+    width: 20vw;
+    border-radius: 15%;
+    gap: 70px;
+    justify-content: center;  
+}
+
+.proyecto-cajita p {
+    margin-top: 15px;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.tecnologia { 
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    text-align: center;
+}
+
+
+.tecnologia-cajita {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 3px solid rgba(238, 238, 238, 0.3);
+    border-radius: 2rem;
+    padding: 20px 40px;
+    flex-direction: column;
+}
+
+.tecnologia-cajita h2 {
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--main-color);
+    justify-content: center;
+}
+
+.tecnologia-imagenes {
+    margin: 0 20px;
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+    display: flex;
+}
+
+.tecnologia-imagenes img {
+    width: 8vw;
+    height: auto;
+    border-radius: 10%;
+    justify-content: space-between;
+    margin: 30px;
+}
+
