@@ -613,12 +613,6 @@ max-width: 1000px;
     background-color: var(--bg-color);
     margin-top: -50rem;
 }
-.asistencia h2{
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #080808;
-    color: #fca311;
-}
 
 .asistencia .container{
     background-color: #fca311;
