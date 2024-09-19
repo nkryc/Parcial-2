@@ -609,6 +609,14 @@ max-width: 1000px;
     text-align: center;
 }
 
+.asistencia h2{
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #080808;
+    color: #fca311;
+}
+
+
 .asistencia{
     background-color: var(--bg-color);
     margin-top: -50rem;
