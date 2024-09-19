@@ -391,8 +391,8 @@ max-width: 1000px;
 }
 
 .item-nosotros{
-    min-height: 480px;
-    max-width: 310px;
+    min-height: 470px;
+    max-width: 300px;
     background: rgba(0, 0, 0, 0.7);
     border: 3px solid rgba(238, 238, 238, 0.3);
     border-radius: 2rem;
