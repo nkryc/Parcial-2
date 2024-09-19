@@ -76,7 +76,7 @@ nav ul {
 
 .sidebar a {
     width: 100%;
-    color: var(--text-color);
+    color: var(--main-color);
 }
 
 .menu-button {
@@ -330,7 +330,7 @@ max-width: 1000px;
 
 .servicio-block img {
     position: relative;
-    width: 22vw;
+    width: 325px;
     border-radius: 15%;
     gap: 70px;
     justify-content: center;  
@@ -338,7 +338,7 @@ max-width: 1000px;
 
 .servicio-block p {
     margin-top: 15px;
-    text-align: justify;
+    text-align: center;
     justify-content: center;
     font-size: 16px;
     
@@ -358,7 +358,7 @@ max-width: 1000px;
     border-radius: 2rem;
     padding: 20px 40px;
     justify-content: space-evenly;
-    text-align: justify;
+    text-align: center;
 }
 
 .colored {
@@ -392,7 +392,8 @@ max-width: 1000px;
 }
 
 .columnas{
-    display: grid;
+    display: flex;
+    flex-direction: row;
     grid-template-columns: repeat(4,1fr);
     gap: 3rem;
 }
@@ -524,6 +525,13 @@ max-width: 1000px;
 
     .img-inicio img {
         width: 50vw; 
+        display: flex;
+        flex-direction:column;
+    }
+
+    .inicio {
+        display: flex;
+        flex-direction: column;
     }
 
     .botones {
@@ -563,7 +571,7 @@ max-width: 1000px;
     .servicios {
         display: flex;
         flex-direction: column;
-        text-align: center;
+        text-align: justify;
     }
 
     .servicio-block {
@@ -572,6 +580,7 @@ max-width: 1000px;
 
     .servicios-texto {
         flex-direction: column;
+        text-align: justify;
         gap: 10px;
     }
 
@@ -593,6 +602,11 @@ max-width: 1000px;
     .hideOnMobile{
         display: none;
 
+    }
+
+    .columnas {
+        display: flex;
+        flex-direction: column;
     }
 
 }
