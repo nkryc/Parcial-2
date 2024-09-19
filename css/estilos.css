@@ -399,8 +399,8 @@ max-width: 1000px;
 }
 
 .item-nosotros{
-    min-height: 400px;
-    max-width: 300px;
+    min-height: 50rem;
+    max-width: auto;
     background: rgba(0, 0, 0, 0.7);
     border: 3px solid rgba(238, 238, 238, 0.3);
     border-radius: 2rem;
@@ -429,11 +429,6 @@ max-width: 1000px;
 
 .conacto{
     background-color: var(--bg-color);
-}
-
-.contacto h2{
-    margin-bottom: 3rem;
-    color: white;
 }
 
 .contacto form{
@@ -558,10 +553,6 @@ max-width: 1000px;
         padding: 2rem 0;
     }
 
-    .footer ul li {
-        padding: 0 10px;
-    }
-
     }
     .servicios-titulo{
         display: flex;
@@ -610,18 +601,15 @@ max-width: 1000px;
     }
 
 }
-.soporte .heading{
-    font-size: 50px;
-    text-align: center;
-    padding: 60px 0;
-}
 .soporte p{
-    font-size: 30px;
+    font-size: 25px;
+    font-weight: 400;
     text-align: center;
-    padding: 20px 0;
 }
+
 .asistencia{
     background-color: var(--bg-color);
+    margin-top: -50rem;
 }
 
 .asistencia .container{
@@ -675,17 +663,16 @@ max-width: 1000px;
     margin-left: 0.5rem;
 }
 
+.info{
+    margin-top: -70rem;
+}
+
 .primero {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 5rem 12%;
-    flex-wrap: wrap; /* Para que sea responsive */
-}
-
-.heading {
-    text-align: center;
-    width: 100%;
+    flex-wrap: wrap;
 }
 
 .contenido-pri {
@@ -727,12 +714,7 @@ max-width: 1000px;
     align-items: center;
     justify-content: space-between;
     padding: 5rem 12%;
-    flex-wrap: wrap; /* Para que sea responsive */
-}
-
-.header {
-    text-align: center;
-    width: 100%;
+    flex-wrap: wrap;
 }
 
 .contenido-seg {
@@ -774,12 +756,7 @@ max-width: 1000px;
     align-items: center;
     justify-content: space-between;
     padding: 5rem 12%;
-    flex-wrap: wrap; /* Para que sea responsive */
-}
-
-.heading {
-    text-align: center;
-    width: 100%;
+    flex-wrap: wrap;
 }
 
 .contenido-ter {
@@ -819,7 +796,6 @@ max-width: 1000px;
 /* CSS Portfolio Juan :P */
 
 .portfolio-section {
-    margin-top: 4vw;
     text-align: center;
 }
 
@@ -827,11 +803,6 @@ max-width: 1000px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.portfolio-titulo h1 {
-    font-size: 5rem;
-    color: var(--main-color);
 }
 
 .portfolio-titulo h2 {
