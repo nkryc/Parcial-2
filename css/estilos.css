@@ -603,10 +603,17 @@ max-width: 1000px;
     }
 
 }
+
 .soporte p{
     font-size: 25px;
     font-weight: 400;
     text-align: center;
+}
+
+.asistencia{
+    background-color: var(--bg-color);
+    margin-top: -30rem;
+    margin-bottom: 60rem;
 }
 
 .asistencia h2{
@@ -614,12 +621,6 @@ max-width: 1000px;
     text-align: center;
     background-color: #080808;
     color: #fca311;
-}
-
-
-.asistencia{
-    background-color: var(--bg-color);
-    margin-top: -50rem;
 }
 
 .asistencia .container{
