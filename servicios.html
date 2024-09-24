@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,17 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
     <header>
         <a href="index.html"><img src="img/logo-inicio.png" alt="logo" class="logo"></a>
         <nav>
             <ul class="sidebar">
-                <li onclick=hideSidebar()><a href="#" class="logo-ham"><svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#fca311"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li onclick=hideSidebar()><a href="#" class="logo-ham"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="50px" viewBox="0 -960 960 960" width="50px" fill="#fca311">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="servicios.html" class="active">Servicios</a></li>
@@ -27,68 +33,77 @@
                 <li class="hideOnMobile"><a href="portafolio.html">Portafolio</a></li>
                 <li class="hideOnMobile"><a href="soporte.html">Soporte</a></li>
                 <li class="hideOnMobile"><a href="contacto.html">Contacto</a></li>
-                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#080808"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="50px" viewBox="0 -960 960 960" width="50px" fill="#080808">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
             </ul>
         </nav>
         <script>
-            function showSidebar(){
-                const sidebar = document.querySelector(".sidebar")  
+            function showSidebar() {
+                const sidebar = document.querySelector(".sidebar")
                 sidebar.style.display = "flex"
             }
-            function hideSidebar(){
-                const sidebar = document.querySelector(".sidebar")  
+            function hideSidebar() {
+                const sidebar = document.querySelector(".sidebar")
                 sidebar.style.display = "none"
             }
         </script>
-     </header>
+    </header>
     <section class="servicios-section">
         <div class="servicios-titulo">
             <h1 class="heading">Servicios</h1>
-            <h2>En <span class="colored">FitFusion</span> ofrecemos servicios orientados a mejorar la experiencia y el rendimiento del entrenamiento
+            <h2>En <span class="colored">FitFusion</span> ofrecemos servicios orientados a mejorar la experiencia y el
+                rendimiento del entrenamiento
                 físico mediante el diseño de
-                <span class="colored">rutinas adaptativas</span> al usuario según sus condiciones, necesidades y expectativas.</h2> 
-            <h3>Esto lo logramos mediante la recolección de información del usuario, con la cual <span class="colored">diseñamos</span>, <span class="colored">optimizamos</span>
-                y <span class="colored">asesoramos</span> posibles mejoras a su forma de entrenar.</h3> 
+                <span class="colored">rutinas adaptativas</span> al usuario según sus condiciones, necesidades y
+                expectativas.
+            </h2>
+            <h3>Esto lo logramos mediante la recolección de información del usuario, con la cual <span
+                    class="colored">diseñamos</span>, <span class="colored">optimizamos</span>
+                y <span class="colored">asesoramos</span> posibles mejoras a su forma de entrenar.</h3>
         </div>
         <div class="servicios">
             <div class="servicio-block">
-                <h3>Diseño de Rutinas Personalizadas</h3>
-                <img src="img/rutina-personalizada.jpg" alt="Diseño de Rutinas">
-                <p><span class="colored">Adaptado a tus objetivos</span>, condición física y estilo de vida. Cada plan es diseñado
-                    por entrenadores certificados con años de experiencia, garantizando que cada sesión esté adaptada
-                    para obtener resultados de manera eficiente y segura.</p>
+                <h3>Desarrollo de sitios web personalizados</h3>
+                <img src="img/rutina-personalizada.jpg" alt="Desarrollo de sitios web personalizados">
+                <p><span class="colored"></span>Creación de sitios web a medida, adaptados a las
+                    necesidades y objetivos del cliente, incluyendo diseño responsivo y optimización para diferentes
+                    dispositivos.</p>
             </div>
             <div class="servicio-block">
-                <h3>Optimización de Rutinas</h3> 
-                <img src="img/optimizar-rutina.jpg" alt="Optimización de Rutinas">
-                <p>Diseñado para <span class="colored">mejorar tu rendimiento</span>,
-                    maximizando los resultados de tus entrenamientos actuales. A través de un análisis detallado de tu
-                    rutina actual y tus progresos, ajustamos y perfeccionamos cada aspecto para asegurar que estés
-                    aprovechando al máximo tu tiempo en el gimnasio.</p>
+                <h3>Consultoría en estrategia digital</h3>
+                <img src="img/optimizar-rutina.jpg" alt="Consultoría en estrategia digital">
+                <p><span class="colored"></span>Asesoramiento para definir y
+                    ejecutar una estrategia digital efectiva, que abarca desde la experiencia de usuario (UX) hasta la
+                    optimización para motores de búsqueda (SEO).</p>
             </div>
             <div class="servicio-block">
-                <h3>Asesoramiento Físico y Nutricional</h3> 
-                <img src="img/asesoramiento-nutricional.jpg" alt="Asesoramiento Físico y Nutricional"> 
-                <p>Ofrecemos un enfoque
-                    integral que <span class="colored">maximice tus resultados en el gimnasio y mejore tu bienestar general</span>. Combinamos
-                    estrategias de entrenamiento basadas en ciencia con planes nutricionales personalizados, ayudándote
-                    a alcanzar tus metas de forma efectiva, saludable y sostenible.</p>
+                <h3>Mantenimiento y soporte técnico</h3>
+                <img src="img/asesoramiento-nutricional.jpg" alt="Mantenimiento y soporte técnico">
+                <p><span class="colored"></span>Servicios continuos de actualización, seguridad y resolución de problemas para
+                    garantizar el buen funcionamiento del sitio web a largo plazo.</p>
             </div>
         </div>
         <div class="servicios-texto">
-            <div><p>Comprometidos con tu bienestar integral, combinamos ciencia, experiencia y pasión para ofrecerte
-                soluciones personalizadas que transforman tu salud y optimizan tus resultados.</p>
+            <div>
+                <p>Comprometidos con tu bienestar integral, combinamos ciencia, experiencia y pasión para ofrecerte
+                    soluciones personalizadas que transforman tu salud y optimizan tus resultados.</p>
             </div>
-            <div><p>Nos enfocamos en la excelencia y la sostenibilidad, brindando un acompañamiento cercano que garantiza que
-                cada paso hacia tus metas sea seguro, efectivo y alineado con tus necesidades individuales.</p>
+            <div>
+                <p>Nos enfocamos en la excelencia y la sostenibilidad, brindando un acompañamiento cercano que garantiza
+                    que
+                    cada paso hacia tus metas sea seguro, efectivo y alineado con tus necesidades individuales.</p>
             </div>
         </div>
     </section>
     <footer class="footer">
         <div class="text-container">
-           <p class="copyright">Materia: Diseño y Desarrollo Web | | Curso: 480799 | | Grupo: 4 | | Todos los Derechos Reservados® - Sitio desarrollado para uso educativo 2024</p>
-           <img src="img/uade-logo-min.png" alt="uade-logo" class="logo-uade">
-       </div>
-      </footer>
+            <p class="copyright">Materia: Diseño y Desarrollo Web | | Curso: 480799 | | Grupo: 4 | | Todos los Derechos
+                Reservados® - Sitio desarrollado para uso educativo 2024</p>
+            <img src="img/uade-logo-min.png" alt="uade-logo" class="logo-uade">
+        </div>
+    </footer>
 </body>
+
 </html>
