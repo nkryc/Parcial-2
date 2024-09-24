@@ -119,7 +119,6 @@ section{
     align-items: center;
     justify-content: center;
     gap: 15rem;
-    margin-bottom: -7.2rem;
 }
 
 .contenido-inicio{
@@ -363,7 +362,6 @@ max-width: 1000px;
 
 .nosotros{
     background-color: var(--bg-color);
-    margin-bottom: -7.2rem;
 }
 
 .caja-nosotros{
