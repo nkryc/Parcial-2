@@ -618,7 +618,8 @@ max-width: 1000px;
 
 .asistencia{
     background-color: var(--bg-color);
-    margin-top: -70rem;
+    margin-top: -45rem;
+    margin-bottom: 80rem;
 }
 
 .asistencia h2{
@@ -674,7 +675,7 @@ max-width: 1000px;
 }
 
 .asistencia .container .bar .info span{
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 500;
     margin-left: 0.5rem;
 }
@@ -722,7 +723,8 @@ max-width: 1000px;
 .img-pri img {
     width: 20vw;
     border-radius: 10%;
-    box-shadow: 0 0 25px var(--main-color);
+    border: 4px solid var(--main-color);
+    box-shadow: 0 0 10px var(--main-color);
 }
 
 .segundo {
@@ -764,7 +766,8 @@ max-width: 1000px;
 .img-seg img {
     width: 20vw;
     border-radius: 10%;
-    box-shadow: 0 0 25px var(--main-color);
+    border: 4px solid var(--main-color);
+    box-shadow: 0 0 10px var(--main-color);
 }
 
 .tercero {
@@ -806,7 +809,8 @@ max-width: 1000px;
 .img-ter img {
     width: 20vw;
     border-radius: 10%;
-    box-shadow: 0 0 25px var(--main-color);
+    border: 4px solid var(--main-color);
+    box-shadow: 0 0 10px var(--main-color);
 }
 
 /* CSS Portfolio Juan :P */
